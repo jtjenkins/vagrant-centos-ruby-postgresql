@@ -1,0 +1,1 @@
+puts "Ruby is installed correctly! Hooray!"
