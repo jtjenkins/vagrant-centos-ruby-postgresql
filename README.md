@@ -8,3 +8,5 @@ This build script, rather than using Chef, uses a basic Bash script to install R
 One note for set up, you will need Virtualbox and Vagrant installed, then if teh base box doesn't automatically install, you can install it via this command:
 
 vagrant box add centOSx64 http://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.3-x86_64-v20130101.box
+
+The /code folder maps to /home/vagrant (the folder you log in to) on the VM, so put your code in there and you are all set!
