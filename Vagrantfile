@@ -1,11 +1,7 @@
 Vagrant::Config.run do |config|
   # Setup the box
-  # NOTE: To install the box, type in to a console window
-  # "vagrant box add centOSx64 http://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.3-x86_64-v20130101.box"
-  # or
-  # "vagrant add box centOSx64 /path/to/CentOS-6.3-x86_64-v20130101.box"
-  # This only needs to be done once per developer machine
   config.vm.box = "centOSx64"
+  config.vm.box_url = "http://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.3-x86_64-v20130101.box"
   # Forward guest port 80 to host port 4567 (ruby)
   config.vm.forward_port 3000, 8080
   # Forward guest port 80 to host port 4567 (postgresql)
